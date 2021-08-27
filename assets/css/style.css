@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap');
+
 body {
-    background-color: aqua;
+    color: rgb(0, 0, 0);
+    font-family: 'lato', sans-serif;
+    text-align: center;
+}
+
+#index {
+    background-image: url("../images/background-main-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+}
+
+#hi-scores {
+    background-image: url("../images/hi-scores-background-image.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#title {
+    padding: 80px 10px 210px;
+    text-decoration: underline;
+}
+
+#greeting-text {
+    line-height: 250%;
+}
+
+.container1 {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 85%;
+    height: 100vh;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0.65);
+    border: none;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
 }
