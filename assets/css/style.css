@@ -22,8 +22,12 @@ body {
     height: 100%;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
 h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
@@ -31,11 +35,15 @@ p {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 150%;
+    letter-spacing: 1.5px;
 }
 
 #title {
-    padding: 80px 10px 210px;
+    padding: 30px 10px 150px;
     text-decoration: underline;
+}
+#greeting-title{
+    font-weight: bolder;
 }
 
 #greeting-text {
@@ -44,7 +52,7 @@ p {
 
 .container1 {
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 85%;
     height: 100vh;
 }
@@ -52,9 +60,14 @@ p {
 .btn{
     background-color: rgba(255, 255, 255, 0.65);
     border: none;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
     font-size: large;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+.btn:hover {
+    background-color: white;
 }
