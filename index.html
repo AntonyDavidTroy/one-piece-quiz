@@ -27,7 +27,11 @@
                 </div>
             </div>
         </div> -->
-
+        <div class="controls">
+            <button type="button" id="start-btn" class="btn">
+                Start the Quiz here.
+            </button>
+        </div>
         <!-- Info box -->
 
         <div class="info-box">
@@ -35,7 +39,7 @@
                 <span>Rules Of The Quiz</span>
             </div>
             <div class="rules-list">
-                <div class="info">1. You will have only <span>15 seconds</span> per question.</div>
+                <div class="info">1. You will have only <span>20 seconds</span> per question.</div>
                 <div class="info">2. Once you select your answer you can not change it.</div>
                 <div class="info">3. You can't select an answer once the timer has run out.</div>
                 <div class="info">4. You can't go back to previous questions.</div>
@@ -46,15 +50,48 @@
                 <button class="restart">Continue</button>
             </div>
         </div>
-        <div class="controls">
-            <button type="button" id="start-btn" class="btn">
-                Start the Quiz here.
-            </button>
+<!-- Quiz Box -->
+<div class="quiz-box">
+    <header>
+        <div class="title">One Piece Quiz</div>
+        <div class="timer">
+            <div class="time-text">Time left</div>
+            <div class="timer-seconds">20</div>
         </div>
+    </header>
+    <section>
+        <div class="question">
+            <span>Who was the first member to join Luffy's crew in the Straw Hat Pirates?</span>
+        </div>
+        <div class="answer-list">
+            <div class="answer-option">
+                <span>Zoro</span>
+            </div>
+            <div class="answer-option">
+                <span>Sanji</span>
+            </div>
+            <div class="answer-option">
+                <span>Nami</span>
+            </div>
+            <div class="answer-option">
+                <span>Usopp</span>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Quiz Box Footer-->
+    <footer>
+        <div class="total-questions">
+            <span><p>2</p>Of<p>20</p>Questions</span>
+        </div>
+        <button class="next-btn">Next Question</button>
+    </footer>
+</div>
+
         <button type="button" id="scores-btn" class="btn">
             <a class="" href="hiscores.html">
                 See how well you did against the best!</a>
             </button>
-    <script src="assets/js/script.js"></script>
+    <script> src="assets/js/script.js" </script>
 </body>
 </html>
