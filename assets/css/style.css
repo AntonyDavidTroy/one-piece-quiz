@@ -22,15 +22,6 @@ body {
     height: 100%;
 }
 
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-}
-
 #title {
     padding: 30px 10px 150px;
     text-decoration: underline;
@@ -118,7 +109,8 @@ h2 {
     left: 28%;
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
-    padding: 15px;    
+    padding: 15px;
+    opacity: 0;
 }
 
 
@@ -287,6 +279,54 @@ footer .next-btn {
 }
 
 footer .next-btn:hover {
+    background-color:#929191c2;
+    border: 1px solid #929191c2;
+}
+
+.results-box .completed-text {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.results-box .completed-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 10px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.results-box .score-text span {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.results-box .score-text span p {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.results-box .buttons {
+    margin: 15px 0;
+}
+
+
+.results-box .buttons button{
+    margin: 0 20px;
+    height: 75px;
+    width: 125px;
+    background: #c7c2c2c2;
+    margin: 10px 20px 0 0;
+    border: 1px solid #c7c2c2c2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.5s ease;;
+}
+
+
+.results-box .buttons button:hover {
     background-color:#929191c2;
     border: 1px solid #929191c2;
 }
