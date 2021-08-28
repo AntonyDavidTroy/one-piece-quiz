@@ -77,3 +77,69 @@ let quiz = [
         answer:1
     },
 ]
+let quizQuestions = [];
+let currentAnswer;
+
+
+function shuffleQuestions(questionArray) {
+    var currentIndex = questionArray.length,  randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      // And swap it with the current element.
+      [questionArray[currentIndex], questionArray[randomIndex]] = [
+        questionArray[randomIndex], questionArray[currentIndex]];
+    }
+  
+    return questionArray;
+}
+
+
+function displayQuizRules(){
+    document.querySelector("button.start-btn").classList.add('hidden');
+    document.getElementById('rules').classList.remove('hidden');
+}
+
+
+function displayQuestion(question){
+    document.getElementById("questionText").innerText = question['q'];
+    document.getElementById("option1").innerText = question['options'][0];
+    document.getElementById("option2").innerText = question['options'][1];
+    document.getElementById("option3").innerText = question['options'][2];
+    document.getElementById("option4").innerText = question['options'][3];
+    
+    document.getElementById('rules').classList.add('hidden');
+    document.getElementById("quiz-box").classList.remove('hidden');
+}
+
+function startQuiz(event){
+    quizQuestions = shuffleQuestions(quiz);
+    currentAnswer = quizQuestions[0];
+    displayQuestion(currentAnswer);
+}
+
+
+function startGame(event){
+    displayQuizRules();
+}
+
+
+function validateUserAnswer(event){
+    const answerIndex = parseInt(event.target.getAttribute('data-answer-number'));
+    const correctAnswer = parseInt(currentAnswer['answer']);
+    if (answerIndex === correctAnswer){
+        console.log('Correct')
+    }
+    else{
+        console.log('incorrect');
+    }
+}
+
+
+let startButton = document.querySelector("button.start-btn");
+let infoBox = document.getElementsByClassName("info-box");
+startButton.addEventListener('click', startGame);
+document.getElementById('startQuiz').addEventListener('click', startQuiz);
+let answerButtons = document.querySelectorAll(".answer-option").forEach(button => button.addEventListener('click', validateUserAnswer));

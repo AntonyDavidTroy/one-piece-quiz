@@ -71,7 +71,7 @@ body {
     box-sizing: border-box;
 }
 
-#start-btn {
+.start-btn {
     position: absolute;
     top: 50%;
     left: 39%;
@@ -81,18 +81,22 @@ body {
 }
 
 .info-box{
-    display: none;
     position: absolute;
     width: 600px;
     top: 20%;
     left: 28%;
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
-    padding: 15px;    
+    padding: 15px;
+}
+
+.info-box .activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .quiz-box {
-    display: none;
     position: absolute;
     width: 600px;
     top: 20%;
@@ -103,6 +107,7 @@ body {
 }
 
 .results-box {
+    display: none;
     position: absolute;
     width: 600px;
     top: 20%;
@@ -110,9 +115,7 @@ body {
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
     padding: 15px;
-    opacity: 0;
 }
-
 
 .info-box .info-title {
     height: 40px;   
@@ -329,4 +332,8 @@ footer .next-btn:hover {
 .results-box .buttons button:hover {
     background-color:#929191c2;
     border: 1px solid #929191c2;
+}
+
+.hidden {
+    display: none;
 }

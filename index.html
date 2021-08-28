@@ -12,29 +12,14 @@
     <!-- quiz welcome screen -->
 
 <div class="container1">
-     <!--  TITLE <h1 id="title">One Piece Quiz</h1>
-        <h2 id="greeting-title">Welcome to the quiz!</h2>
-        <p id="greeting-text">Think you know everything there is to know about One Piece? <br / >There are 15 questions to answer to test your knowledge.<br />There are some easy and also some tricky questions, be careful!
-        </p> 
-        <div id="question-container" id="">
-            <div id="answer-container" class="hide">
-                <div class="question">Question</div>
-                <div id="answer-buttons" class="button-grid">
-                    <button class="answer-btn btn">Answer 1</button>
-                    <button class="answer-btn btn">Answer 2</button>
-                    <button class="answer-btn btn">Answer 3</button>
-                    <button class="answer-btn btn">Answer 4</button>
-                </div>
-            </div>
-        </div> -->
-        <div class="controls">
-            <button type="button" id="start-btn" class="btn">
+        <div class="controls" >
+            <button type="button" class="start-btn btn">
                 Start the Quiz here.
             </button>
         </div>
         <!-- Info box -->
 
-        <div class="info-box">
+        <div class="info-box hidden" id="rules">
             <div class="info-title">
                 <span>Rules Of The Quiz</span>
             </div>
@@ -47,11 +32,11 @@
             </div>
             <div class="rules-buttons">
                 <button class="quit">Exit</button>
-                <button class="restart">Continue</button>
+                <button class="restart" id="startQuiz">Continue</button>
             </div>
         </div>
 <!-- Quiz Box -->
-<div class="quiz-box">
+<div class="quiz-box hidden" id="quiz-box">
     <header>
         <div class="title">One Piece Quiz</div>
         <div class="timer">
@@ -61,19 +46,19 @@
     </header>
     <section>
         <div class="question">
-            <span>Who was the first member to join Luffy's crew in the Straw Hat Pirates?</span>
+            <span id="questionText">Who was the first member to join Luffy's crew in the Straw Hat Pirates?</span>
         </div>
         <div class="answer-list">
-            <div class="answer-option">
+            <div class="answer-option" id="option1" data-answer-number="1">
                 <span>Zoro</span>
             </div>
-            <div class="answer-option">
+            <div class="answer-option" id="option2" data-answer-number="2">
                 <span>Sanji</span>
             </div>
-            <div class="answer-option">
+            <div class="answer-option" id="option3" data-answer-number="3">
                 <span>Nami</span>
             </div>
-            <div class="answer-option">
+            <div class="answer-option" id="option4" data-answer-number="4">
                 <span>Usopp</span>
             </div>
         </div>
@@ -105,6 +90,6 @@
             <a class="" href="hiscores.html">
                 See how well you did against the best!</a>
             </button>
-    <script> src="assets/js/script.js" </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
