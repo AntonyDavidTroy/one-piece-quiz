@@ -11,27 +11,50 @@
 
     <!-- quiz welcome screen -->
 
-    <div class="container1">
-        <div class="" id="">
-            <div class="">
-                <h1 id="title">One Piece Quiz</h1>
-                <h2 id="greeting-title">Welcome to the quiz!</h2>
-                <p id="greeting-text">Think you know everything there is to know about One Piece? <br / >There are 15 questions to answer to test your knowledge.<br />There are some easy and also some tricky questions, be careful!
-                </p>
-                <div class="">
-                    <div class="">
-                        <button type="button" class="btn">
-                            Start the Quiz here.
-                        </button>
-                    </div>
-                    <div type="button" class="">
-                        <a class="btn" href="hiscores.html">
-                            See how well you did against the best!</a>
-                    </div>
+<div class="container1">
+     <!--  TITLE <h1 id="title">One Piece Quiz</h1>
+        <h2 id="greeting-title">Welcome to the quiz!</h2>
+        <p id="greeting-text">Think you know everything there is to know about One Piece? <br / >There are 15 questions to answer to test your knowledge.<br />There are some easy and also some tricky questions, be careful!
+        </p> 
+        <div id="question-container" id="">
+            <div id="answer-container" class="hide">
+                <div class="question">Question</div>
+                <div id="answer-buttons" class="button-grid">
+                    <button class="answer-btn btn">Answer 1</button>
+                    <button class="answer-btn btn">Answer 2</button>
+                    <button class="answer-btn btn">Answer 3</button>
+                    <button class="answer-btn btn">Answer 4</button>
                 </div>
             </div>
+        </div> -->
+
+        <!-- Info box -->
+
+        <div class="info-box">
+            <div class="info-title">
+                <span>Rules Of The Quiz</span>
+            </div>
+            <div class="rules-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per question.</div>
+                <div class="info">2. Once you select your answer you can not change it.</div>
+                <div class="info">3. You can't select an answer once the timer has run out.</div>
+                <div class="info">4. You can't go back to previous questions.</div>
+                <div class="info">5. You will get scored on the questions you get correct.</div>
+            </div>
+            <div class="rules-buttons">
+                <button class="quit">Exit</button>
+                <button class="restart">Continue</button>
+            </div>
         </div>
-    
+        <div class="controls">
+            <button type="button" id="start-btn" class="btn">
+                Start the Quiz here.
+            </button>
+        </div>
+        <button type="button" id="scores-btn" class="btn">
+            <a class="" href="hiscores.html">
+                See how well you did against the best!</a>
+            </button>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
