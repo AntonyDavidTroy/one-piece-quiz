@@ -24,14 +24,13 @@
                 <span>Rules Of The Quiz</span>
             </div>
             <div class="rules-list">
-                <div class="info">1. You will have only <span>20 seconds</span> per question.</div>
+                <div class="info">1. You will have only <span>15 seconds</span> per question.</div>
                 <div class="info">2. Once you select your answer you can not change it.</div>
-                <div class="info">3. You can't select an answer once the timer has run out.</div>
-                <div class="info">4. You can't go back to previous questions.</div>
-                <div class="info">5. You will get scored on the questions you get correct.</div>
+                <div class="info">3. You can't go back to previous questions.</div>
+                <div class="info">4. You will get scored on the questions you get correct.</div>
             </div>
             <div class="rules-buttons">
-                <button class="quit">Exit</button>
+                <button class="quit" id="exit-btn">Exit</button>
                 <button class="restart" id="startQuiz">Continue</button>
             </div>
         </div>
@@ -39,9 +38,9 @@
 <div class="quiz-box hidden" id="quiz-box">
     <header>
         <div class="title">One Piece Quiz</div>
-        <div class="timer">
-            <div class="time-text">Time left</div>
-            <div class="timer-seconds">20</div>
+        <div class="score-box">
+            <div class="score-text">Correct</div>
+            <div class="correct-answers" id="correct-answers">0</div>
         </div>
     </header>
     <section>
@@ -69,7 +68,7 @@
         <div class="total-questions">
             <span><p>1</p>Of<p>20</p>Questions</span>
         </div>
-        <button class="next-btn">Next Question</button>
+        <button class="next-btn" id="next-btn">Next Question</button>
     </footer>
 </div>
 
@@ -77,8 +76,8 @@
 <div class="results-box">
     <div>    </div>
     <div class="completed-text"><h2>Congratulations!</h2><br />Well done! You've completed the Quiz!</div>
-    <div class="score-text">
-        <span>You've scored<p>1</p> out of <p>20</p></span>
+    <div class="results-text">
+        <span>You've scored<p>1</p> out of <p>15</p></span>
     </div>
     <div class="buttons">
         <button class="restart">Retry Quiz</button>

@@ -76,9 +76,35 @@ let quiz = [
         options:["Mito Mito no Mi","Gito Gito no Mi","Jito Jito no Mi","Hito Hito no Mi"],
         answer:1
     },
+    {
+        q:"What town was the Pirate King executed",
+        options:["logtown","Loguetown","woodtown","lunartown"],
+        answer:2
+    },
+    {
+        q:"Who helps Luffy sneak into Impel Down?",
+        options:["Boa Hancock","Shanks","Mihawk","Buggy"],
+        answer:1
+    },
+    {
+        q:"Who was the first pirate captain Luffy defeated?",
+        options:["Buggy","Krieg","Arlong","Alvida"],
+        answer:4
+    },
+    {
+        q:"Which one of these are not a type of Haki?",
+        options:["Arnament","Conquerer's","Divinity","Observation"],
+        answer:3
+    },
+    {
+        q:"Which one of these swords does Zoro not own?",
+        options:["Wado Ichimonji","Kikoku ","Shusui","Sandai Kitetsu "],
+        answer:2
+    },
 ]
 let quizQuestions = [];
 let currentAnswer;
+let questionNumber = 1;
 
 
 function shuffleQuestions(questionArray) {
@@ -102,6 +128,11 @@ function displayQuizRules(){
     document.getElementById('rules').classList.remove('hidden');
 }
 
+function leaveQuiz(){
+    document.getElementById('rules').classList.add('hidden');    
+    document.querySelector("button.start-btn").classList.remove('hidden');
+
+}
 
 function displayQuestion(question){
     document.getElementById("questionText").innerText = question['q'];
@@ -143,3 +174,5 @@ let infoBox = document.getElementsByClassName("info-box");
 startButton.addEventListener('click', startGame);
 document.getElementById('startQuiz').addEventListener('click', startQuiz);
 let answerButtons = document.querySelectorAll(".answer-option").forEach(button => button.addEventListener('click', validateUserAnswer));
+let exitQuiz = document.getElementById('exit-btn');
+exitQuiz.addEventListener('click', leaveQuiz)

@@ -179,7 +179,7 @@ body {
     font-weight: 600;
 }
 
-.quiz-box header .timer {
+.quiz-box header .score-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,11 +193,11 @@ body {
     font-weight: 600;
 }
 
-.quiz-box header .timer .timer-text {
+.quiz-box header .score-box .score-text {
     user-select: none;
 }
 
-.quiz-box header .timer-seconds {
+.quiz-box header .correct-answers {
     background-color: rgba(255, 255, 255, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 10px;
@@ -299,12 +299,12 @@ footer .next-btn:hover {
     letter-spacing: 2px;
 }
 
-.results-box .score-text span {
+.results-box .results-text span {
     font-size: 1.3rem;
     margin: 20px 0;
 }
 
-.results-box .score-text span p {
+.results-box .results-text span p {
     font-weight: 700;
     padding: 0 5px;
 }
