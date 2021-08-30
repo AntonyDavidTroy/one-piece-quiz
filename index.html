@@ -23,8 +23,8 @@
                 <span>Rules Of The Quiz</span>
             </div>
             <div class="rules-list">
-                <div class="info">1. You will have only <span>15 seconds</span> per question.</div>
-                <div class="info">2. Once you select your answer you can not change it.</div>
+                <div class="info">1. You will only have <span>one chance</span> to select your answer per question.</div>
+                <div class="info">2. Once you select your answer you can <span>not</span> change it.</div>
                 <div class="info">3. You can't go back to previous questions.</div>
                 <div class="info">4. You will get scored on the questions you get correct.</div>
             </div>
@@ -42,7 +42,7 @@
             <div class="correct-answers" id="correct-answers">0</div>
         </div>
     </header>
-    <section id="question-box">
+    <div id="question-box">
         <div class="question">
             <span id="questionText">Who was the first member to join Luffy's crew in the Straw Hat Pirates?</span>
         </div>
@@ -60,7 +60,7 @@
                 <span>Usopp</span>
             </div>
         </div>
-    </section>  
+    </div>  
 
     <footer>
         <div class="total-questions">
@@ -73,7 +73,7 @@
     <div>    </div>
     <div class="completed-text"><h2>Congratulations!</h2><br />Well done! You've completed the Quiz!</div>
     <div class="results-text">
-        <span>You've scored<p id="results-Score">1</p> out of <p>20</p></span>
+        <div>You've scored<span id="results-Score">1</span> out of <span>20</span></div>
     </div>
     <div class="buttons">
         <button class="restart" id="retry-btn">Retry Quiz</button>
