@@ -107,7 +107,6 @@ let currentAnswer;
 let currentIndex = [0];
 let questionIndex = [0];
 let score = 0;
-let questionNumber = 1;
 let questionCounter = 0;
 
 
@@ -179,6 +178,7 @@ function getNextQuestion() {
     }
     else {
         startQuiz();
+        questionNumber.innerHTML = questionCounter;
     }
 }
 
@@ -196,4 +196,4 @@ let exitQuiz = document.getElementById('exit-btn');
 exitQuiz.addEventListener('click', leaveQuiz)
 let nextButton = document.getElementById('next-btn');
 nextButton.addEventListener('click', getNextQuestion);
-
+let questionNumber = document.getElementById('question-Number');
