@@ -104,7 +104,11 @@ let quiz = [
 ]
 let quizQuestions = [];
 let currentAnswer;
+let currentIndex = [0];
+let questionIndex = [0];
+let score = 0;
 let questionNumber = 1;
+let questionCounter = 0;
 
 
 function shuffleQuestions(questionArray) {
@@ -149,6 +153,7 @@ function startQuiz(event){
     quizQuestions = shuffleQuestions(quiz);
     currentAnswer = quizQuestions[0];
     displayQuestion(currentAnswer);
+    questionCounter++
 }
 
 
@@ -168,6 +173,19 @@ function validateUserAnswer(event){
     }
 }
 
+function getNextQuestion() {
+    if (questionCounter === quiz.length){
+        console.log('quiz over');
+    }
+    else {
+        startQuiz();
+    }
+}
+
+
+function finishGame (){
+    console.log('finshed');
+}
 
 let startButton = document.querySelector("button.start-btn");
 let infoBox = document.getElementsByClassName("info-box");
@@ -176,3 +194,6 @@ document.getElementById('startQuiz').addEventListener('click', startQuiz);
 let answerButtons = document.querySelectorAll(".answer-option").forEach(button => button.addEventListener('click', validateUserAnswer));
 let exitQuiz = document.getElementById('exit-btn');
 exitQuiz.addEventListener('click', leaveQuiz)
+let nextButton = document.getElementById('next-btn');
+nextButton.addEventListener('click', getNextQuestion);
+
