@@ -1,5 +1,3 @@
-/** Array of Objects */
-
 let quiz = [
     {
         q:"Who was the first member to join Luffy's crew in the Straw Hat Pirates?",
@@ -44,7 +42,7 @@ let quiz = [
     {
         q:"How many years was Brook stranded alone for afrer his crew died?",
         options:["40","50","60","80"],
-        answer:3
+        answer:2
     },
     {
         q:"Who was the first member to reach the Thousand Sunny after the time-skip?",
@@ -78,7 +76,7 @@ let quiz = [
     },
     {
         q:"What town was the Pirate King executed",
-        options:["logtown","Loguetown","woodtown","lunartown"],
+        options:["Logtown","Loguetown","Moontown","Lunartown"],
         answer:2
     },
     {
@@ -101,23 +99,21 @@ let quiz = [
         options:["Wado Ichimonji","Kikoku ","Shusui","Sandai Kitetsu "],
         answer:2
     },
-]
+];
+
 let quizQuestions = [];
-let currentAnswer;
+let currentQuestion;
 let currentIndex = [0];
-let questionIndex = [0];
+let questionIndex = 0;
 let score = 0;
 let questionCounter = 0;
 
 
 function shuffleQuestions(questionArray) {
     var currentIndex = questionArray.length,  randomIndex;
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-      // And swap it with the current element.
       [questionArray[currentIndex], questionArray[randomIndex]] = [
         questionArray[randomIndex], questionArray[currentIndex]];
     }
@@ -150,9 +146,9 @@ function displayQuestion(question){
 
 function startQuiz(event){
     quizQuestions = shuffleQuestions(quiz);
-    currentAnswer = quizQuestions[0];
-    displayQuestion(currentAnswer);
-    questionCounter++
+    currentQuestion = quizQuestions[questionIndex];
+    displayQuestion(currentQuestion);
+    questionCounter++;  
 }
 
 
@@ -163,37 +159,69 @@ function startGame(event){
 
 function validateUserAnswer(event){
     const answerIndex = parseInt(event.target.getAttribute('data-answer-number'));
-    const correctAnswer = parseInt(currentAnswer['answer']);
+    const correctAnswer = parseInt(currentQuestion['answer']);
     if (answerIndex === correctAnswer){
-        console.log('Correct')
+        score += 1; 
+        correctScore.innerHTML = score ;
+        resultsScore.innerHTML = score ;
+        console.log('Correct');
+
     }
     else{
         console.log('incorrect');
     }
-}
-
-function getNextQuestion() {
-    if (questionCounter === quiz.length){
+    questionIndex += 1;
+    if (questionIndex < quizQuestions.length){
+        currentQuestion = quizQuestions[questionIndex];
+        displayQuestion(currentQuestion);
+        questionNumber.innerHTML = questionIndex + 1;
+    }
+    else{
+        document.getElementById("results-box").classList.remove('hidden');   
+        document.getElementById("quiz-box").classList.add('hidden');
         console.log('quiz over');
     }
-    else {
-        startQuiz();
-        questionNumber.innerHTML = questionCounter;
-    }
 }
-
 
 function finishGame (){
     console.log('finshed');
 }
 
+function resetQuiz() {
+    quizQuestions = [];
+    currentAnswer = null;
+    currentIndex = 0;
+    questionIndex = 0;
+    score = 0;
+    questionCounter = 0;
+    document.getElementById('results-box').classList.add('hidden');
+    correctScore.innerHTML = score ;
+    resultsScore.innerHTML = score ;
+    questionNumber.innerHTML = questionIndex + 1;
+}
+
+function retryQuiz() {
+    resetQuiz();
+    startQuiz();
+}
+
+function quitQuiz() {
+    leaveQuiz();
+    resetQuiz();
+    document.getElementById("results-box").classList.add('hidden');
+}
+
+
 let startButton = document.querySelector("button.start-btn");
-let infoBox = document.getElementsByClassName("info-box");
 startButton.addEventListener('click', startGame);
 document.getElementById('startQuiz').addEventListener('click', startQuiz);
 let answerButtons = document.querySelectorAll(".answer-option").forEach(button => button.addEventListener('click', validateUserAnswer));
 let exitQuiz = document.getElementById('exit-btn');
-exitQuiz.addEventListener('click', leaveQuiz)
-let nextButton = document.getElementById('next-btn');
-nextButton.addEventListener('click', getNextQuestion);
+exitQuiz.addEventListener('click', leaveQuiz);
 let questionNumber = document.getElementById('question-Number');
+let resultsScore = document.getElementById('results-Score');
+let correctScore = document.getElementById('correct-answers');
+let retryQuizBtn = document.getElementById('retry-btn');
+retryQuizBtn.addEventListener('click', retryQuiz );
+let quitQuizBtn = document.getElementById('quit-btn');
+quitQuizBtn.addEventListener('click', quitQuiz);

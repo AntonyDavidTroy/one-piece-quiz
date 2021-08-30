@@ -4,22 +4,18 @@ body {
     color: rgb(0, 0, 0);
     font-family: 'lato', sans-serif;
     text-align: center;
-}
-
-#index {
     background-image: url("../images/background-main-image.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    height: 100%;
+    height: 100% !important;
 }
 
-#hi-scores {
-    background-image: url("../images/hi-scores-background-image.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: 100%;
+h1{
+    color: black;
+    font-size: 3rem;
+    padding-top: 25px;
+    text-decoration: underline;
 }
 
 #title {
@@ -38,10 +34,9 @@ body {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.5);
     width: 85%;
-    height: 750px;
-    align-items: center;
+    height: 100vh;
+    align-content: center;
 }
-
 
 .btn{
     background-color: rgba(255, 255, 255, 0.65);
@@ -61,57 +56,39 @@ body {
     transition: all 0.5s ease;
 }
 
-#scores-btn {
-    position: absolute;
-    top: 680px;
-    left: 37%;
-}
-
 #answer-btn {
     box-sizing: border-box;
 }
 
 .start-btn {
-    position: absolute;
-    top: 50%;
-    left: 39%;
+    margin: 100px auto 0;
     padding: 20px 25px;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.info-box{
-    position: absolute;
-    width: 600px;
-    top: 20%;
-    left: 28%;
+.info-box {
+    margin: 100px auto 0;
+    height: 50%;
+    width: 60%;
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
     padding: 15px;
 }
 
-.info-box .activeInfo {
-    z-index: 5;
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .quiz-box {
-    position: absolute;
-    width: 600px;
-    top: 20%;
-    left: 28%;
+    margin: 100px auto 0;
+    height: 60%;
+    width: 60%;
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
     padding: 15px;    
 }
 
 .results-box {
-    display: none;
-    position: absolute;
-    width: 600px;
-    top: 20%;
-    left: 28%;
+    margin: 100px auto 0;
+    height: 60%;
+    width: 60%;
     background:rgba(255, 255, 255, 0.65);
     border-radius: 10px;
     padding: 15px;
@@ -238,52 +215,25 @@ section .answer-list .answer-option:hover {
 .quiz-box footer {
     height: 75px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-self: center;
     padding: 0 10px;
 }
 
-.quiz-box footer .total-questions span {
-    display: flex;
+.quiz-box footer .total-questions div {
+    margin-top: 25px;
     user-select: none;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.quiz-box footer .total-questions span p{
-    font-weight: 700;
-    padding: 0 5px;
-}
-
-footer .total-questions span {
+    width: 100%;
     padding: 0 7.5px;
     font-weight: 400;
 }
 
-footer .total-questions span:first-child {
+.quiz-box footer .total-questions div span{
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+footer .total-questions div:first-child {
     padding-left: 0px;
-}
-
-footer .next-btn {
-    height: 40px;
-    padding: 0 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background: #c7c2c2c2;
-    margin: 10px 20px 0 0;
-    border: 1px solid #c7c2c2c2;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-footer .next-btn:hover {
-    background-color:#929191c2;
-    border: 1px solid #929191c2;
 }
 
 .results-box .completed-text {
