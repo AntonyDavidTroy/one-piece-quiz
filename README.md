@@ -1,104 +1,234 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/responsive-preview.jpg">
 
-Welcome AntonyDavidTroy,
+[View the live project here.](https://antonydavidtroy.github.io/one-piece-quiz/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
+# One Piece Quiz
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Milestone 2 Project
 
-A blue button should appear to click: _Make Public_,
+This is a fictional quiz website for my Milestone 1 project.
 
-Another blue button should appear to click: _Open Browser_.
+The intention behind this project is a simple but fun quiz for those who enjoy watching One Piece and want to test their knowledge and that would or could test between other friends that are fans
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Table of Contents
+1. [**User Experience(UX)**](#user-experience(ux))
+     - [**Colour Scheme**](#colour-scheme)
+     - [**Typography**](#typography)
+     - [**Imagery**](#imagery)
+     - [**Wireframes**](#wireframes)
 
-A blue button should appear to click: _Make Public_,
+2. [**Existing Features**](#existing-features)
+      - [**Navigation Bar**](#navigation-bar)
+      - [**Footer**](#footer)
+      - [**Landing Page**](#landing-page)
+      - [**Contact Info On Home Page**](#contact-info-on-home-page)
+      - [**Membership Options**](#membership-options)
+      - [**Classes**](#classes)
+      - [**Timetable**](#timetable)
+      - [**Gallery**](#gallery)
+      - [**Google Maps**](#google-maps)
+      - [**Get In Touch**](#get-in-touch)
+      - [**Features Left To Implement**](#features-left-to-implement)
+      
+3. [**Technology Used**](#technology-used)
+    - [**Languages Used**](#languages-used)
+    - [**Frameworks, Libraries & Programs Used**](#frameworks,-libraries-&-programs-used)
 
-Another blue button should appear to click: _Open Browser_.
+      
+4. [**Testing**](#testing)
+      - [**Validator Testing**](#validator-testing)
+      - [**Testing User Stories from User Experience (UX) Section**](#testing-user-stories-from-user-experience-(UX)-section)
+      - [**Further Testing**](#further-testing)
+      - [**Issues**](#issues)
+5. [**Deployment**](#deployment)
+      - [**Forking**](#forking)
+      - [**Cloning**](#cloning)
+ 
+6.  [**Credits**](#credits)
+       - [**Contents**](#contents)
+       - [**Media**](#Media)
+       - [**Acknowledgements**](#acknowledgements)
+       
+## User Experience(UX)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+ - First Time User Goals. 
+   1. As a First Time Visitor, I want to easily understand how to navigate through the quiz.
+   2. As a First Time Visitor, I want to be able to read the rules, questions and answers easily.
+   3. As a First Time Visitor, I want to be see the quiz be themed correctly and colorful to match the quiz contents.
+   4. As a First Time Visitor, I want to enjoy myself with the quiz while being slightly challenged and be wanting to come back to retry the quiz with new questions.
+ 
+ - Returning Visitor Goals.
+   1. As a Returning Visitor, I want to be able to try and beat my old score at a quicker time.
+     
+ - Frequent User Goals.
+   1. As a Frequent User, I want to be able to complete the quiz with friends and/or family to see who thinks they know more.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+This website instantly shows that the quiz is in the theme of an anime called One Piece, that is welcoming anyone to challenge the quiz. The design is simple with a colorful background and containers with a opacity so the user can still see the colorful background image. After starting the quiz, the user will be able to see the short list of quiz to browse through and be able to either continue or exit the quiz. If the user chooses to click continue, the user will be brought straight to the quiz questions and answers with multiple choice answers. As soon as the user clicks on the answer option they desire, it will automatically bring the user to the next question. Once the user has finished the 20 questions, a results box will pop up and give the score that the user got from the quiz. The quiz has some challenging questions to make the user want to retry and beat their last score. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Colour Scheme
 
-------
+  - colorful background image
+  - rgba(255, 255, 255, 0.65)
+   
+   - The main colours for the website is from a colourful background image that is themed into the quiz. rgba(255, 255, 255, 0.65) is the color I used for the containers of the information throughout the quiz and a low opacity so that the user will still be able to see the background image while playning the quiz. I believe that this compliment the quiz by making it colourful but simple, it also does not make it too complex and full of distracting images all over the website. I believe the colours and style used in this website helps make the quiz look fun and wanting the user to come back or attempt more.
 
-## Release History
+##### Typography
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+   - Lato 
+   - The Lato font is the font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Lato is a clean font used frequently in programming, so it is both attractive, east to read and appropriate.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    
+#### Imagery
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  - Imagery is important however having too many images can be distracting in certain websites. I believe using one big colorful image as a background and using the simple color of while with a low opacity to give the website a clean yet slightly colorful website without being too distracting. 
+    
+    
+#### Wireframes
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+ - Desktop Wireframe - home page -  [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/deskotp-home-page.jpg)
+ - Desktop Wireframe - rules page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/deskotp-rules-page.jpg)
+ - Desktop Wireframe - quiz page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/deskotp-quiz-page.jpg)
+ - Desktop Wireframe - results page -[View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/deskotp-results-page.jpg)
+ 
+ - Tablet Wireframe - home page -[View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/tablet-home-page.jpg)
+ - Tablet Wireframe - rules page -[View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/tablet-rules-page.jpg)
+ - Tablet Wireframe - quiz page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/tablet-quiz-page.jpg)
+ - Tablet Wireframe - results page [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/tablet-results-page.jpg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+ - Mobile Wireframe - home page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/phone-home-page.jpg)
+ - Mobile Wireframe - rules page -[View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/phone-rules-page.jpg)
+ - Mobile Wireframe - quiz page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/phone-quiz-page.jpg)
+ - Mobile Wireframe - results page - [View](https://github.com/AntonyDavidTroy/one-piece-quiz/blob/main/readme-assets/phone-results-page.jpg)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Existing Features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Features Left To Implement
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  - Add a option to add a usernames to go with the score along with a leaderboard so that the user can show off their score and see how well they did compared to others.
+  - Could possible add a section where users can suggest questions and leave feedback.
+  - 
+## Technology Used
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Languages Used
 
-------
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-## FAQ about the uptime script
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-**Why have you added this script?**
+#### Frameworks, Libraries & Programs Used
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- [Media Queries:](https://en.wikipedia.org/wiki/Media_queriesn/)
+    - Media Queries was used to assist with the responsiveness and styling of the website when it comes to multiple sizes of the devices that are used.
+- [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used on the answer buttons and for the navigations options buttons e.g start, exit or retry quiz. The reason why I used the hover style is to let the user know what and where they are on the screen and know what answer they want.
+- [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+- [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+- [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### Validator Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  - HTML
+      - No errors were returned when passing through the official W3C validator - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fantonydavidtroy.github.io%2Fone-piece-quiz%2F)
+  - CSS
+     -  No errors were found when passing through the official (Jigsaw) validator - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fantonydavidtroy.github.io%2Fone-piece-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+ - JSHint
+   - No errors were found when passing through the official JSHint validator - [website] (https://jshint.com/)
+   - 
+ #### Testing User Stories from User Experience (UX) Section
+ 
+ - First Time USer Goals.
+ 
+      - 
+ 
+     1. choice.
 
-**So….?**
+      - 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+     1.
+       
+      -  
+       
+      1. 
+     
+      - 
 
-**Can I opt out?**
+      1.
+       
+- Returning User Goals.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    
+ - Frequent User Goals.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+ #### Further Testing
+ 
+ - The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
+ 
+ - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX, being portrait and landscape.
+ 
+ - Family members and friends were asked to review the quiz and to point out any bugs and/or user experience issues and what they did or did not like.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+#### Issues
 
----
+  
+## Deployment
 
-Happy coding!
+- Github
+  1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+  2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+  3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+  4. Under "Source", click the dropdown called "None" and select "Master Branch".
+  5. The page will automatically refresh.
+
+
+## Forking
+  If you wish to contribute to this website you can Fork it without affecting the main branch by following the procedure outlined below.
+  1. Go to the GitHub website and log in.
+  2. Locate the [Repository](https://antonydavidtroy.github.io/one-piece-quiz/) used for this project.
+  3. On the right-hand side of the Repository name, you'll see the 'Fork' button. It's located next to the 'Star' and 'Watch' buttons.
+  4. This will create a copy in your personal repository.
+  5. Once you're finished making changes you can locate the 'New Pull Request' button just above the file listing in the original repository.
+
+## Cloning 
+  If you wish to clone or download this repository to your local device you can follow the procedure outlined below.
+  1. Go to the GitHub website and log in.
+  2. Locate the [Repository](https://antonydavidtroy.github.io/one-piece-quiz/s) used for this project.
+  3. Under the Repository name locate 'Clone or Download' button in green.
+  4. To clone the repository using HTTPS click the link under "Clone with HTTPS".
+  5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
+  6. Type `Git Clone` and paste the URL you copied from the GitHub.
+  7. To create your local clone press `Enter`
+
+## Credits
+
+#### Contents
+     
+  - Some of the questions in the quiz are from the top of my head as I am a huge fan of the Anime, however the majority of the harder questions I found and was taken from the website https://twinfinite.net/2021/01/hardest-one-piece-quiz-youll-ever-take/
+  
+  - The layout of the quiz is set up in the form of how majority quizzes are, so I thought i'd keep it simple and familiar.
+  
+#### Media
+       
+  - The image throughout the website was just from a google images searches of 'One piece backgrounds'.
+
+
+#### Acknowledgements
+
+-   I'd like to say and give a HUGE thanks to my Mentor Antonio for continuously helping with the struggles and the consistent feedback and ideas throughout the project.
+
