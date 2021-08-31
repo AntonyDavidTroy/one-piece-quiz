@@ -321,6 +321,9 @@ footer .total-questions div:first-child {
     .quiz-box {
         height: 65%;
     }
+    div .answer-list .answer-option {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width:400px) {
