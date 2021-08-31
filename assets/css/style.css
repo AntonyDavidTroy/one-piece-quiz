@@ -320,6 +320,7 @@ footer .total-questions div:first-child {
     }
     .quiz-box {
         height: 65%;
+        width: 75%;
     }
     div .answer-list .answer-option {
         font-size: 0.9rem;
