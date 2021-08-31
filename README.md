@@ -105,7 +105,8 @@ This website instantly shows that the quiz is in the theme of an anime called On
 ## Features Left To Implement
 
   - Add a option to add a usernames to go with the score along with a leaderboard so that the user can show off their score and see how well they did compared to others.
-  - Could possibly add a section where users can suggest questions and leave feedback.
+  
+  - Would like to add a section where users can suggest questions and leave feedback.
 
 ## Technology Used
 
