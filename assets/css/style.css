@@ -312,15 +312,16 @@ footer .total-questions div:first-child {
         height: 55%;
         font-size: .9rem;
     }
+
 }
 
 @media screen and (max-width:450px) {
-    .completed-text h2 {
-        font-size: 1.5rem;
-    }
     .results-box {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         width: 80%;
+    }
+    .completed-text h2 {
+        font-size: 1.3rem;
     }
     .quiz-box {
         height: 65%;
