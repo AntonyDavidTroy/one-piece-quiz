@@ -301,7 +301,7 @@ footer .total-questions div:first-child {
 
 @media screen and (max-width: 575px) {
   .info-box, .quiz-box {
-    margin: 70px auto 0;
+    margin: 40px auto 0;
     width: 70%;
     height: 55%;
     font-size: .9rem;
@@ -317,10 +317,11 @@ footer .total-questions div:first-child {
 @media screen and (max-width:400px) {
     .info-box {
         height: 60%;
+        margin: 30px auto 0;
     }
     
     .quiz-box{
-        margin: 50px auto 0;
+        margin: 30px auto 0;
         height: 65%;
     }
 
@@ -338,13 +339,14 @@ footer .total-questions div:first-child {
     .info-box .rules-buttons button {
         width: 100px;
         height: 40px;
+        font-size: .9rem;
     }
 }
 
 
 @media screen and (max-width:360px) {
     .info-box, .quiz-box {
-        margin: 50px auto 0;
+        margin: 30px auto 0;
         width: 75%;
         height: 65%;
     }
