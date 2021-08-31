@@ -10,7 +10,7 @@
 
 This is a fictional quiz website for my Milestone 2 project.
 
-The intention behind this project is a simple but fun quiz for those who enjoy watching One Piece and want to test their knowledge and that would or could test between other friends that are fans
+The intention behind this project is a simple but fun quiz for those who enjoy watching One Piece and want to test their knowledge and that would or could test between other friends that are fans.
 
 ## Table of Contents
 1. [**User Experience(UX)**](#user-experience(ux))
