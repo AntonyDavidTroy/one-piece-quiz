@@ -300,11 +300,17 @@ footer .total-questions div:first-child {
 }
 
 @media screen and (max-width: 575px) {
-  .info-box, .quiz-box {
-    margin: 40px auto 0;
-    width: 70%;
-    height: 55%;
-    font-size: .9rem;
+    .info-box {
+        margin: 40px auto 0;
+        width: 70%;
+        height: 55%;
+        font-size: .9rem;
+    }
+    .quiz-box {
+        margin: 40px auto 0;
+        width: 70%;
+        height: 55%;
+        font-size: .9rem;
     }
 }
 
@@ -325,7 +331,7 @@ footer .total-questions div:first-child {
     
     .quiz-box{
         margin: 30px auto 0;
-        height: 65%;
+        height: 70%;
     }
 
     .info-box .info-title {
@@ -351,7 +357,7 @@ footer .total-questions div:first-child {
     .info-box, .quiz-box {
         margin: 30px auto 0;
         width: 75%;
-        height: 65%;
+        height: 75%;
     }
     .results-box .completed-text h2 {
         font-size: 1rem;
