@@ -140,7 +140,7 @@ This website instantly shows that the quiz is in the theme of an anime called On
      -  No errors were found when passing through the official (Jigsaw) validator - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fantonydavidtroy.github.io%2Fone-piece-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
  - JSHint
    - No errors were found when passing through the official JSHint validator - [website] (https://jshint.com/)
-   - 
+ 
  #### Testing User Stories from User Experience (UX) Section
  
  - First Time USer Goals.
