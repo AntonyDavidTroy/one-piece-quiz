@@ -20,16 +20,7 @@ The intention behind this project is a simple but fun quiz for those who enjoy w
      - [**Wireframes**](#wireframes)
 
 2. [**Existing Features**](#existing-features)
-      - [**Navigation Bar**](#navigation-bar)
-      - [**Footer**](#footer)
-      - [**Landing Page**](#landing-page)
-      - [**Contact Info On Home Page**](#contact-info-on-home-page)
-      - [**Membership Options**](#membership-options)
-      - [**Classes**](#classes)
-      - [**Timetable**](#timetable)
-      - [**Gallery**](#gallery)
-      - [**Google Maps**](#google-maps)
-      - [**Get In Touch**](#get-in-touch)
+
       - [**Features Left To Implement**](#features-left-to-implement)
       
 3. [**Technology Used**](#technology-used)
