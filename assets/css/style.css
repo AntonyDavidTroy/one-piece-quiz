@@ -319,7 +319,7 @@ footer .total-questions div:first-child {
         font-size: 1.5rem;
     }
     .quiz-box {
-        height: 70%;
+        height: 65%;
     }
     div .answer-list .answer-option {
         font-size: 0.9rem;
@@ -334,7 +334,7 @@ footer .total-questions div:first-child {
     
     .quiz-box{
         margin: 30px auto 0;
-        height: 70%;
+        height: 65%;
     }
 
     .info-box .info-title {
@@ -360,7 +360,7 @@ footer .total-questions div:first-child {
     .info-box, .quiz-box {
         margin: 30px auto 0;
         width: 75%;
-        height: 75%;
+        height: 70%;
     }
     .results-box .completed-text h2 {
         font-size: 1rem;
