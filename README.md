@@ -52,7 +52,7 @@ The intention behind this project is a simple but fun quiz for those who enjoy w
    4. As a First Time Visitor, I want to enjoy myself with the quiz while being slightly challenged and be wanting to come back to retry the quiz with new questions.
  
  - Returning Visitor Goals.
-   1. As a Returning Visitor, I want to be able to try and beat my old score at a quicker time.
+   1. As a Returning Visitor, I want to be able to try and beat my old score at a quicker time and to be able to see if there is more or different questions.
      
  - Frequent User Goals.
    1. As a Frequent User, I want to be able to complete the quiz with friends and/or family to see who thinks they know more.
@@ -99,6 +99,7 @@ This website instantly shows that the quiz is in the theme of an anime called On
 
 ## Existing Features
 
+ -  This quiz uses a set of 20 questions in a array in javascript to keep them shuffled everytime a user starts the quiz. Javascript is used alot on this website to show and hide certain boxes when needed and not needed. Javascript is also used to add 'click' styles for the answers options so when the user chooses their answers it automatically goes to the next question without the hassle of having to go to and then click another button,  which would direct you to the next question which would take longer. Once the Quiz has finished, you are greeted with a results page which has used Javascript to accumulate all the correct scores you gained through the quiz to show how many the user got correct. Additionally Javascript is used to jump from the end 'results' page after you have finished to quiz to either exit or retry the quiz, when retrying the quiz, Javascript is also used to reshuffled the questions, reset the score and also reset the question counter. When opening the website, there is a large title and a 'start' button quiz. Once selecting the start button the user will then see a list of rules and will have the option to either 'exit' or 'continue' the quiz. The questions have multiple choice answers of 4. All correct answers will be added along the way with a score counter which used Javascript. Javascript also keeps note of all the incorrect scores but does not show them at the end due to it being unnecessary.
 
 
 ## Features Left To Implement
@@ -113,6 +114,9 @@ This website instantly shows that the quiz is in the theme of an anime called On
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
 
 #### Frameworks, Libraries & Programs Used
 
@@ -145,27 +149,33 @@ This website instantly shows that the quiz is in the theme of an anime called On
  
  - First Time USer Goals.
  
-      - 
+      - As a First Time Visitor, I want to easily understand how to navigate through the quiz.
  
-     1. choice.
+     1. When first entering the site, users are automatically greeted with a bright colorful background image, with a clear button that reads 'start quiz'. Throughout the quiz, the navigation is simple and while attempting the quiz the quiz itself navigates for you to the next question to save the hassle of clicking another button e.g a 'next' button. After you finish the last question, you are greeted by the score results and two buttons to either quit or retry the quiz.
 
-      - 
+      - As a First Time Visitor, I want to be able to read the rules, questions and answers easily.
 
-     1.
+     1. When first entering the site, the font is an easy to read and clear font for the user. the title font is obviously the biggest size of them all. The questions are slightly bigger than the answers and they all scale down accordingly when using smaller devices.
        
-      -  
+      -  As a First Time Visitor, I want to be see the quiz be themed correctly and colorful to match the quiz contents.
        
-      1. 
+      1.  When first entering the site, you are greeted with a huge background image which is themed in the anime One Piece, which is obviously what the quiz is about. It greets the user and entices them to start and complete the quiz. To keep the theme consistent I use all the containers with the content inside in white with the opacity low to let the user still be able to see the background image. 
      
-      - 
+      - As a First Time Visitor, I want to enjoy myself with the quiz while being slightly challenged and be wanting to come back to retry the quiz with new questions.
 
-      1.
+      1. When first starting the quiz, you are greeted with the first question, they are randomized in order so that they can not be memorized easily. Some questions are easy and some are slightly difficult. It is stated in the rules box before starting the quiz, which will make the user feel challenged and wanted to test their own knowledge. After completing the quiz and seeing the users results, they will be wanting to test their knowledge again and hoping to come back to see if there will be new or more questions. 
        
 - Returning User Goals.
 
+     - As a Returning Visitor, I want to be able to try and beat my old score at a quicker time and to be able to see if there is more or different questions.
+     
+     1. When opening up the site as a returning visitor, I want the quiz to be styled and navigated the same way or very similar to before, but to have additional questions or different questions in difficulty to keep the visitor feeling refreshed and again, eager to return for the next quiz.
     
  - Frequent User Goals.
-
+ 
+     - As a Frequent User, I want to be able to complete the quiz with friends and/or family to see who thinks they know more.
+     
+     1. When opening up the site as a frequent user, I want to be able to add a username before starting the quiz, that will be able to add onto a leaderboard at the end of the quiz to show off and challenge other people. I want there to be different batches of questions so not all questions are same all the time even if they are shuffled.
 
  #### Further Testing
  
@@ -177,6 +187,14 @@ This website instantly shows that the quiz is in the theme of an anime called On
 
 #### Issues
 
+  - At first, on the mobile side of things, I was really struggling with the position of the divs as I had used 'absolute' position.
+  - When it came to Javascript, I struggled getting the questions to shuffled everytime I restarted the quiz so they wasn't in the same order each time. 
+  - I noticed that the buttons and answers kept floating out of the containers when being used on the mobile devices.
+  - I really struggled getting the 'exit' and 'continue' buttons to stay center, they stayed centered through all devices except for when the screens were under 400px or on the iphoneX.
+  - I struggled getting the question counter to go up along with the questions to let the user know what question they was on at that time.
+  - I struggled getting the score counter to go up along with the questions to let the user know how many questions they were getting correct during the quiz.
+  - When it came to the finalising the styles, I kept noticiing that the question counter was droppning out of the container with some questions due to questions and answering being so long.
+  - I also noticed that the 'congratulations' text on the results page at the end of the quiz was overlapping the container it is supposed to stay in.
   
 ## Deployment
 
