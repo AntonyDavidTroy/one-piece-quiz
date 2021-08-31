@@ -64,7 +64,7 @@ This website instantly shows that the quiz is in the theme of an anime called On
   - colorful background image
   - rgba(255, 255, 255, 0.65)
    
-   - The main colours for the website is from a colourful background image that is themed into the quiz. rgba(255, 255, 255, 0.65) is the color I used for the containers of the information throughout the quiz and a low opacity so that the user will still be able to see the background image while playning the quiz. I believe that this compliment the quiz by making it colourful but simple, it also does not make it too complex and full of distracting images all over the website. I believe the colours and style used in this website helps make the quiz look fun and wanting the user to come back or attempt more.
+   - The main colors for the website is from a colorful background image that is themed into the quiz. rgba(255, 255, 255, 0.65) is the color I used for the containers of the information throughout the quiz and a low opacity so that the user will still be able to see the background image while playing the quiz. I believe that this compliment the quiz by making it colourful but simple and consistent, it also does not make it too complex and full of distracting images all over the website. I believe the colours and style used in this website helps make the quiz look fun and wanting the user to come back or attempt more.
 
 ##### Typography
 
